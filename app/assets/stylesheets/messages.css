@@ -7,16 +7,48 @@
   background-color: #253141;
   width: 300px;
   height: 100vh;
-  padding: 0 20px;
 }
 
+/* サイドバーヘッダー */
 .side_bar_header {
   height: 100px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.header_name a {
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.create_room a {
+  padding: 14px;
+  border: 1px solid lightblue;
+  font-size: 10px;
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+/* チャットルーム表示部分 */
 .rooms {
   background-color: #2F3E51;
   height: calc(100vh - 100px);
+  padding: 0 20px;
+  overflow: scroll;
 }
+
+.room  {
+  padding: 20px 0 40px;
+}
+
+.room_name a {
+  color: white;
+  text-decoration: none;
+}
+
 
 /* チャット画面 */
 .chat {
